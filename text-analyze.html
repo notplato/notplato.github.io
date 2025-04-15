@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis</title>
+    <link rel="stylesheet" href="text-analyze.css">
+    <script src="text-analyze.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Analysis</h1>
+        <div class="underline"></div>
+
+        <div class="text-input-container">
+            <textarea id="textInput" placeholder="Start typing or paste your text here" rows="10"></textarea>
+            <div id="statusIndicator" class="status-indicator">Analyzing...</div>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <h2>Analysis Results</h2>
+            
+            <div class="results-section">
+                <h3>Basic Statistics</h3>
+                <div id="basicStats">
+                    <div class="empty-state">Enter some text to begin analysis</div>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h3>Pronouns Count</h3>
+                <div id="pronounsCount" class="word-counts">
+                    <div class="empty-state">No pronouns detected yet</div>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h3>Prepositions Count</h3>
+                <div id="prepositionsCount" class="word-counts">
+                    <div class="empty-state">No prepositions detected yet</div>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h3>Indefinite Articles Count</h3>
+                <div id="articlesCount" class="word-counts">
+                    <div class="empty-state">No indefinite articles detected yet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

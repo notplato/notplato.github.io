@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Srinivas's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="scripts.js" defer></script>
+        <script src="analytics.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">SK</div>
+            <nav id="topnav">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#journey">My Journey</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="text-analyze.html">Tokenizer</a></li>
+                    <li><a href="assets/docs/SrinivasKolla_CV.pdf" class="cv-button" download>Download CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="home-container" id="home">
+            <div class="text" id="scrambleText"></div>
+            <div class="scroll-indicator">
+                <p>Scroll down</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-heading">
+                <h1>About Me</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Srinivas Kolla, a freshman at IIIT-H, currently pursuing my Bachelor's degree in Computer Science. My passion for technology and electronics drives me to explore and learn about everything in the field—whether it's software, hardware, or anything in between.</p>
+                    <p>Outside of academics, I'm actively involved in the Astronautics and Skateboarding clubs, where I get to blend my love for innovation with my adventurous side. I'm always looking for new opportunities to grow, learn, and connect with like-minded individuals.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/notplato" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:srinivas.kolla@students.iiit.ac.in" target="_blank"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/srinivas_transparent_cropped.png" alt="Srinivas Kolla">
+                </div>
+            </div>
+        </section>
+
+        <section id="journey">
+            <div class="section-heading">
+                <h1>My Journey</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2>2006</h2>
+                        <p>I was born in San Mateo, CA</p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2009</h2>
+                        <p>Went to Apple Seed Montessori School, Sunnyville, CA</p>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2012</h2>
+                        <p>Went to Rockwell International School, Hyderabad</p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>2018</h2>
+                        <p>Went to Greenfield International School, Kakinada</p>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>2024</h2>
+                        <p>Going to IIIT-H, Hyderabad</p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="journey-gallery">
+                <h3>Where I'm From</h3>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="assets/images/california.jpg" alt="California">
+                        <div class="caption">California</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="assets/images/hyderabad.jpg" alt="Hyderabad">
+                        <div class="caption">Hyderabad</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="assets/images/kakinada.jpg" alt="Kakinada">
+                        <div class="caption">Kakinada</div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-heading">
+                <h1>Skills</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-c"></i></div>
+                    <div class="skill-name">C</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-c"></i><i class="fas fa-plus"></i><i class="fas fa-plus"></i></div>
+                    <div class="skill-name">C++</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-name">Python</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width:  70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Srinivas Kolla. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/notplato" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:srinivas.kolla@students.iiit.ac.in" target="_blank"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
